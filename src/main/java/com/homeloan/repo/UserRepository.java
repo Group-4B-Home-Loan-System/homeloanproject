@@ -1,5 +1,4 @@
 package com.homeloan.repo;
-import java.util.List;
 
 import javax.transaction.Transactional;
 
