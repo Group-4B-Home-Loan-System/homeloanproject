@@ -31,7 +31,6 @@
     <groupId>org.webjars</groupId>
     <artifactId>webjars-locator-core</artifactId>
 </dependency>
-
 <dependency>
         <groupId>io.springfox</groupId>
         <artifactId>springfox-boot-starter</artifactId>
@@ -61,7 +60,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -79,13 +77,16 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+		</plugins>
+	</build>
+	<build>
+<plugins>
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -94,6 +95,9 @@
         <testFailureIgnore>true</testFailureIgnore>
     </configuration>
     </plugin>
+</plugins>
+
+    <plugins>	
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -104,5 +108,4 @@
         </plugin>
     </plugins>
 </build>
-
 </project>
